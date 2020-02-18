@@ -1,7 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap');
 
 body{
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
+
 }
 
 header{
@@ -12,16 +18,17 @@ header nav{
     display: flex;
     justify-content: flex-end;  /*Also allowd: flex-start | center*/
     position: relative;
-    
 }
 
 header nav ul li{
     display: inline-block;
-    margin: 8px;
+    margin: 26px;
+    margin-right: 10px;
 }
 
 header nav ul li a{
     color: #ffffff;
+    text-decoration: none;
 }
 
 header nav ul span{
@@ -35,6 +42,7 @@ header #imagen{
     margin-right: auto;
 }
 
-
-
+section{
+    background: url(../img/fondo.jpg);
+}
 
