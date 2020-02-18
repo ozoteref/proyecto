@@ -9,7 +9,7 @@ body{
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
     
     background: url(../img/fondo.jpg);
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: 0px 0px;
 }
@@ -51,10 +51,12 @@ section{
 }
 
 footer{
-    margin-top: 30px;
     padding-top: 10px;
-    background-color: #0000004d;
+    background-color: #0000008f;
     text-align: center;
+    bottom: 0;  
+    position: fixed;
+    width: 100%;
 }
 
 .sprite{
@@ -62,6 +64,7 @@ footer{
     background-repeat: no-repeat;
     zoom: 1;
     display: inline-block;
+    margin-left: 60px;
 }
 
 .btn_face{
