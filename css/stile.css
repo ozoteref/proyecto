@@ -9,7 +9,7 @@ body{
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
     
     background: url(../img/fondo.jpg);
-    background-size: cover;
+    background-size:auto;
     background-repeat: no-repeat;
     background-position: 0px 0px;
 }
@@ -46,9 +46,6 @@ header #imagen{
     margin-right: auto;
 }
 
-section{
-    
-}
 
 footer{
     padding-top: 10px;
@@ -86,11 +83,90 @@ footer{
 	height: 40px;
 }
 
-#cont_principal{
-    max-width: 40%;
-    max-height: 50%;
-    margin: 10px;
+
+div#main_conter{
+    max-width: 100%;
+    margin: 0px auto;
 }
+
+div.card_node{
+    width: 20%;
+    max-width: 500px;
+    padding: 20px;
+    float: left;
+}
+
+div.card_node div.card_node_image{
+    position: relative;
+}
+
+div.card_node div.card_node_image img{
+    width: 100%;
+    height: auto;
+}
+
+div.card_node div.card_node_image div.card-third-vote{
+    position: absolute;
+    background-color: blue;
+    color: cornsilk;
+    border-radius: 50%;
+    padding: 5px;
+    bottom: -10px;
+    right: 15px;
+}
+
+div.card_node div.card_node_detalls{
+    text-align: center;
+    background-color: cornsilk;
+    padding: 10px;
+}
+
+div.card_node div.card_node_detalls div.card_node_detalls_category{
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+div.card_node div.card_node_detalls div.card_node_detalls_title h2{
+    font-size: 14px;
+    font-weight: 100px;
+}
+
+div.card_node div.card_node_detalls div.card_node_detalls_separator{
+    width: 135px;
+    height: 3px;
+    background-color: #565294;
+    margin: 10px auto;
+}
+
+/*
+div.card_node_secundary{
+    width: 250px;
+}
+
+div.card_node_secundary div.card_node_secundary_image{
+    position: relative;
+}
+
+div.card_node_secundary div.card_node_secundary_image img{
+    width: 100%;
+    height: auto;
+}
+
+div.card_node_secundary div.card_node_secundary_image div.card_node_detalls_secundary_category{
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+    background-color: #000000;
+    padding: 10px 15px;
+    color: #ffffff;
+}
+
+div.card_node_secundary div.card_node_secundary_detalls_title h2{
+    font-size: 16px;
+    font-weight: normal;
+}
+
 
 .cont_imagen{
      max-width: 50%;
@@ -126,4 +202,4 @@ footer{
 .cont_contenido .cont_contenido_desc{
     font-size: 16px;
     font-weight: bolder;
-}
+}*/
