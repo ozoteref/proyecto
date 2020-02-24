@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuadros</title>
+
+    <style>
+        p{
+            width: 250px;
+            height: 250px;
+            position: absolute;
+        }
+
+        #p1{
+            background-color: navy;
+        }
+
+        #p2{
+            background-color: darkgreen;
+        }
+
+        #p3{
+            background-color: crimson;
+        }
+
+        #p4{
+            background-color: gray;
+        }
+
+        @media (min-width: 1200px){
+            #p1{
+                margin-left: 0px;
+            }
+
+            #p2{
+                margin-left: 350px;
+            }
+
+            #p3{
+                margin-left: 700px;
+            }
+
+            #p4{
+                margin-left: 1050px;
+            }
+        }
+
+        @media (min-width: 600px) and (max-width: 1199px){
+            #p1{
+                margin-left: 0px;
+            }
+
+            #p2{
+                margin-left: 600px;
+            }
+
+            #p3{
+                margin-left: 0px;
+                margin-top: 300px;
+            }
+
+            #p4{
+                margin-left: 600px;
+                margin-top: 300px;
+            }
+        }
+
+        @media (max-width: 599px){
+            #p1{
+                margin-top: 0px;
+            }
+
+            #p2{
+                margin-top: 350px;
+            }
+
+            #p3{
+                margin-top: 700px;
+            }
+
+            #p4{
+                margin-top: 1050px;
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <p id="p4"></p>
+</body>
+</html>
