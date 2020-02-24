@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animacion</title>
+
+    <style>
+        div{
+            background-color: navy;
+            position: absolute;
+            animation-fill-mode: forwards;
+        }
+
+        div.izquierda{
+            width: 50px;
+            height: 500px;
+            margin-left: 0px;
+            margin-top: 0px;
+            animation-duration: 2s;
+            animation-name: toBottom;
+            animation-delay: 0s;
+        }
+
+        div.abajo{
+            margin-left: 50px;
+            margin-top: 450px;
+            width: 0px;
+            height: 50px;
+            animation-duration: 2s;
+            animation-name: toRight;
+            animation-delay: 2s;
+        }
+
+        div.derecho{
+            margin-left: 500px;
+            margin-top: 0px;
+            width: 50px;
+            height: 0px;
+            animation-duration: 2s;
+            animation-name: toTop;
+            animation-delay: 4s;
+        }
+
+        div.arriba{
+            margin-left: 0px;
+            margin-top: 0px;
+            height: 50px;
+            width: 0px;
+            animation-duration: 2s;
+            animation-name: toLeft;
+            animation-delay: 6s;
+        }
+
+        @keyframes toBottom{
+            from{
+                height: 0px;
+            }
+
+            to{
+                height: 500px;
+            }
+        }
+
+        @keyframes toRight{
+            from{
+                width: 0px;
+            }
+
+            to{
+                width: 500px;
+            }
+        }
+
+        @keyframes toTop{
+            from{
+                height: 0px;
+                margin-top: 500px;
+            }
+
+            to{
+                height: 500px;
+                margin-top: 0px;
+            }
+        }
+
+        @keyframes toLeft{
+            from{
+                width: 0px;
+                margin-left: 500px;
+            }
+
+            to{
+                width: 500px;
+                margin-left: 0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="izquierda"></div>
+    <div class="abajo"></div>
+    <div class="derecho"></div>
+    <div class="arriba"></div>
+</body>
+</html>
