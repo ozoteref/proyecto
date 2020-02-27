@@ -1,0 +1,212 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: #E9ECF4;
+    color: #000;
+    font-family: "Playfair Display" ;
+    /*font-family: "Odibee Sans";
+    font-family: "Krona One" ;
+    font-family: "Simonetta" ;*/
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 1500px;
+    margin: 10px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+
+    /*grid-template-areas: "header header header"
+                         "contenido contenido sidebar"
+                         "widget-1 widget-2 sidebar"
+                         "footer footer footer";*/
+}
+
+.contenedor .contenido h1{
+    text-align: center;
+    color: blue;
+    padding-bottom: 10px;
+}
+
+.contenedor > div,
+.contenedor header,
+.contenedor .contenido,
+.contenedor .sidebar,
+.contenedor footer{
+    background: #fff;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.contenedor header{
+    background: #12203b;
+    color: #fff;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    /*grid-area: header;*/
+}
+
+.contenedor .contenido{
+    grid-column: span 2;
+    /*grid-area: contenido;*/
+}
+
+.contenedor .sidebar{
+    grid-column: 3/4;
+    background-color: #faa43d;
+    /*display: flex;
+    align-items: center;
+    justify-content: center;*/
+    min-height: 100px;
+    grid-row: span 2;
+    /*grid-area: sidebar;*/
+}
+
+.contenedor .witget-1,
+.contenedor .witget-2{
+    background: #55a8fd;
+    color: #fff;
+    height: 100px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*.contenedor .witget-1{
+    grid-area: widget-1;
+}
+
+.contenedor .witget-2{
+    grid-area: widget-2;
+}*/
+
+.contenedor footer{
+    background: #12203e;
+    color: #fff;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    /*grid-area: footer;*/
+}
+
+@media screen and (max-width: 760px){
+    .contenedor .contenido{
+        grid-column: 1/-1;
+    }
+
+    .contenedor .sidebar{
+        grid-column: 1/-1;
+    }
+
+    .contenedor .witget-1{
+        grid-column: span 2;
+    }
+}
+
+/*@media screen and (max-width:768px){
+    .contenedor{
+        grid-template-areas: "header header header"
+                             "contenido contenido contenido"
+                             "sidebar sidebar sidebar"
+                             "widget-1 widget-1 widget-2"
+                             "footer footer footer";
+    }
+}*/
+
+.card-first{
+    width: 33.3%;
+    float: left;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.card-first .card-first-imagen{
+    position: relative;
+}
+
+.card-first .card-first-imagen img{
+    width: 100%;
+    height: auto;
+    border-radius: 1em 1em 0em 0em;
+}
+
+.card-first .card-first-content{
+    font-family: "Simonetta";
+    background: rgba(94, 91, 91, 0.418);
+    color: #000;
+    padding: 10px;
+    border-radius: 0em 0em 1em 1em;
+    margin-top: -4px;
+}
+
+.card-first .card-first-content h2{
+    font-size: 25px;
+    text-align: center;
+}
+
+.card-first .card-first-content p{
+    font-size: 16px;
+    text-align: left;
+    padding: 5px;
+}
+
+.card-first .card-first-content time{
+    font-size: 11px;
+    padding: 5px;
+}
+
+.card-first .card-first-imagen .icon i{
+    background-color: rgb(107, 171, 207);
+    color: rgb(1, 1, 10);
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 50%;
+    position: absolute;
+    right: 5px;
+    bottom: -20px;
+}
+
+.clear-float{
+    clear: both;
+}
+
+
+.card-second{
+    width: 350px;
+    padding: 5px;
+}
+
+.card-second .card-second-imagen img{
+    width: 50%;
+    height: auto;
+    float: left;
+    border-radius: 1em 0em 0em 1em;
+}
+
+.card-second .card-second-content{
+    font-family: "Simonetta";
+    width: 50%;
+    background: rgba(94, 91, 91, 0.418);
+    color: #000;
+    border-radius: 0em 1em 1em 0em;
+    float: right;
+}
+
+.card-second .card-second-content h2{
+    font-size: 15px;
+    text-align: center;
+}
+
+.card-second .card-second-content p{
+    font-size: 12.5px;
+    text-align: left;
+}
+
+.card-second .card-second-content time{
+    font-size: 8px;
+}
